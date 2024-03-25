@@ -170,6 +170,7 @@ footer {
     }
     .titulo_header img {
         width: 80px;
+        display: block;
     }
     .titulo_header h1 {
         font-size: 0;
