@@ -109,7 +109,7 @@ h2,h3,h4 {
 .descripcion_productos ul{
     line-height: 1.7;
 }
-.calefactores {
+.ventiladores {
     margin-bottom: 0;
 }
 
@@ -195,6 +195,7 @@ footer {
 
   /* Productos Mobile */
 
+  
   @media(max-width: 600px) {
     .container_productos {
         padding: 16px;
@@ -213,7 +214,7 @@ footer {
     .card_ventilador {
         height: 314px;
     }
-    .img_ventilador {
+    .img_ventilador, .img_calefactor {
         width: 100%;
         height: 190px;
     }
@@ -257,9 +258,6 @@ footer {
     .descripcion_productos ul{
         padding: 0 0 0 32px;
     }
-    .calefactores {
-        margin-bottom: 0;
-    }
     .ventiladores {
         border-bottom: 1px solid black;
         padding-bottom: 16px;
@@ -278,5 +276,23 @@ footer {
         margin-bottom: 48px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+}
+
+/* Imagenes responsive */
+
+@media(min-width: 410px) and (max-width: 600px) {
+    .img_calefactor {
+        height: 258px;
+    }
+}
+@media(min-width: 410px) and (max-width: 422px) {
+    .card_calefactor {
+        height: 389px;
+    }
+}
+@media(min-width: 483px) and (max-width: 600px) {
+    .img_ventilador {
+        height: 223px;
     }
 }
