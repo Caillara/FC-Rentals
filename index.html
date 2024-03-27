@@ -24,7 +24,13 @@
             </div>
     
             <div class="container_banners">
-                <img src="img/sliderMobilInfo.jpg" alt="Imagen con el logo e informacion de la empresa">
+                <picture>
+                    <!-- Primera fuente de imagen: para dispositivos con una pantalla pequeña -->
+                    <source media="(max-width: 600px)" srcset="img/sliderMobilInfo_600px_2.jpg">
+                    
+                    <!-- Imagen predeterminada si ninguna de las fuentes anteriores coincide -->
+                    <img src="img/sliderInfo.jpg" alt="Imagen con el logo e informacion de la empresa">
+                  </picture>
             </div>
         </header>
 

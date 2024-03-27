@@ -184,9 +184,9 @@ footer {
     .titulo_header span {
        display: none;
     }
-    .container_banners {
+   /*  .container_banners {
         display: none;
-    }
+    } */
     .container_banners img {
         width: 100%;
         height: 85vh;
@@ -197,6 +197,9 @@ footer {
 
   
   @media(max-width: 600px) {
+    .container_banners img {
+        height: 50vh;
+    }
     .container_productos {
         padding: 16px;
     }
@@ -281,12 +284,12 @@ footer {
 
 /* Imagenes responsive */
 
-@media(min-width: 410px) and (max-width: 600px) {
+@media(min-width: 411px) and (max-width: 600px) {
     .img_calefactor {
         height: 258px;
     }
 }
-@media(min-width: 410px) and (max-width: 422px) {
+@media(min-width: 411px) and (max-width: 422px) {
     .card_calefactor {
         height: 389px;
     }
