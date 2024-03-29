@@ -36,7 +36,7 @@ h2,h3,h4 {
     margin-bottom: 16px;
     font-size: 32px;
 }
-.wspp_header {
+.wspp_header, .wspp_contact {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -45,7 +45,7 @@ h2,h3,h4 {
     text-align: center;
     font-size: 24px;
 }
-.wspp_header span a{
+.wspp_header span a, .wspp_contact span a{
     text-decoration: none;
     color: white;
     font-size: 48px;
@@ -132,7 +132,12 @@ h2,h3,h4 {
     text-transform: uppercase;
 }
 
+.wspp_contact span a:hover {
+    color: #d9d9d9;
+}
+
 /* Footer */
+
 footer {
     padding: 16px;
     background-color: #111;
@@ -156,10 +161,47 @@ footer {
     color: #797979;
   }
 
+  /* Wspp Flotante */
 
-  /* Mobile */
+  .logo_wspp_flotante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: #0df053;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+  }
+  .logo_wspp_flotante a {
+    height: 35px;
+  }
+  .logo_wspp_flotante:hover {
+    background-color: #f1f1f1;
+  }
+  .icono_flotante {
+    width: 35px;
+    height: 35px;
+  }
 
-  /* Header */
+
+  @media (max-width: 600px) {
+    .icono_flotante {
+      width: 30px;
+      height: 30px;
+    }
+    .logo_wspp_flotante a {
+        height: 30px;
+      }
+  }
+
+/* Responsive */
+
+/* Header */
 
   @media(max-width: 600px) {
     .container_titulo {
@@ -187,14 +229,12 @@ footer {
         display: none;
     }
     .container_banners img {
-        height: 50vh;
+        height: 85vh;
     }
   }
-    .container_banners img {
-        height: 50vh;
-    }
 
-  
+  /* Productos */
+
   @media(max-width: 600px) {
     .container_productos {
         padding: 16px;
@@ -210,15 +250,9 @@ footer {
         width: 80%;
         border: solid 1px rgba(0, 0, 0, 0.7);
     }
-    .card_ventilador {
-        height: 314px;
-    }
     .img_ventilador, .img_calefactor {
         width: 100%;
         height: 190px;
-    }
-    .card_calefactor {
-        height: 354px;
     }
     .titulo_productos {
         display: flex;
@@ -263,35 +297,61 @@ footer {
     }
   }
 
-  /* Contacto Mobile */
+/* Contacto */
 
 @media(max-width: 600px) {
     .container_contacto {
         padding: 16px;
+        height: 200px;
     }
     .container_contacto span:first-child{
         text-align: center;
         font-size: 18px;
-        margin-bottom: 48px;
+        margin-bottom: 24px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .wspp_contact {
+        gap: 8px;
+    }
+    .wspp_contact img{
+        width: 40px;
+    }
+    .wspp_contact span a {
+        font-size: 24px;
     }
 }
 
 /* Imagenes responsive */
 
-@media(min-width: 411px) and (max-width: 600px) {
-    .img_calefactor {
-        height: 258px;
-    }
-}
-@media(min-width: 411px) and (max-width: 422px) {
-    .card_calefactor {
-        height: 389px;
-    }
-}
 @media(min-width: 483px) and (max-width: 600px) {
     .img_ventilador {
         height: 223px;
+    }
+}
+
+/* Card Responsive */
+
+@media(min-width: 411px) and (max-width: 600px) {
+    .card_ventilador {
+        height: 314px;
+    }
+    .card_calefactor {
+        height: 288px;
+    }
+}
+
+@media(min-width: 411px) and (max-width: 422px) {
+    .card_calefactor {
+        height: 321px;
+    }
+}
+
+@media(max-width: 410px){
+    .card_ventilador {
+        height: 314px;
+    }
+    .card_calefactor {
+        height: 354px;
     }
 }
